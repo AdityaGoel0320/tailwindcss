@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<style>
+  .extra{
+    /* text-red-500 */
+    color: red;
+    /* font-size: 700px; */
+  }
+</style>
+
+
+
+<body class="bg-black text-white flex h-screen items-center justify-center   ">
+  <div id="card" class="card  m-12 p-12   flex flex-col sm:flex-row   space-x-4 items-center justify-center rounded-xl  border border-white border-4" >
+    <div id="img" class="img h-12 w-12 border border-red-500 border-4 ">
+      <img src="https://th.bing.com/th?id=OIP.Z4o9htajpxoOZDyLW-LKuQHaHa&w=249&h=249&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+    </div>
+    <div id="content" class="content  border border-red-500 border-4">
+      <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, distinctio?</p>
+    </div>
+
+
+    <button id="btn" class="m-24 bg-white text-black text-xl md:text-white">
+      Click me
+    </button>
+  </div>
+
+
+  <script>
+    let btn = document.getElementById("btn")
+    let p = document.getElementById("p")
+
+
+    btn.addEventListener("click" , ()=>{
+      console.log("hi")
+      // p.style.color  = "black"
+      p.classList.add("extra")
+
+    })
+    // let  = document.getElementById("")
+  </script>
+</body>
+
+
+
+
+
+</html>
