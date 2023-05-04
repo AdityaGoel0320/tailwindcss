@@ -1,56 +1,88 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
+    <title>PW Website development</title>
 </head>
-<style>
-  .extra{
-    /* text-red-500 */
-    color: red;
-    /* font-size: 700px; */
-  }
-</style>
 
+<body class="bg-slate-950 text-white">
 
-
-<body class="bg-black text-white flex h-screen items-center justify-center   ">
-  <div id="card" class="card  m-12 p-12   flex flex-col sm:flex-row   space-x-4 items-center justify-center rounded-xl  border border-white border-4" >
-    <div id="img" class="img h-12 w-12 border border-red-500 border-4 ">
-      <img src="https://th.bing.com/th?id=OIP.Z4o9htajpxoOZDyLW-LKuQHaHa&w=249&h=249&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+    <!-- navbar starts -->
+    <div class="flex justify-between items-center  bg-blue-200 text-black p-3  ">
+        <div class="text-2xl text-indigo-700 font-bold uppercase">Pw skills</div>
+        <ul class=" hidden md:flex items-center justify-around gap-3 cursor-pointer">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <div class="bg-red-600 p-1 text-white font-semibold text-1.5xl hidden md:block">
+            Login/SignUp
+        </div>
+        <div class="md:hidden fontext-2xl">
+            <a class="text-2xl flex item-center" href="#">&#8801;</a>
+        </div>
     </div>
-    <div id="content" class="content  border border-red-500 border-4">
-      <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, distinctio?</p>
+
+    <!-- navbar ends -->
+
+    <!-- image  section -->
+    <img class="w-full hidden md:block" src="img.png" alt="">
+
+    <img class="md:hidden"
+        src="https://www.bing.com/images/search?view=detailV2&ccid=YKH2cVMZ&id=C233E6EE263B8B822AB865CC59EBB0907D5487FE&thid=OIP.YKH2cVMZizaL0aDifI1lmAHaLS&mediaurl=https%3a%2f%2fcdn.pwskills.com%2fassets%2fuploads%2fbanners%2f63a18d078076282a178f528c%2fmobile.jpg&exph=4167&expw=2733&q=pw+sills+img&simid=608055696152202633&FORM=IRPRST&ck=F4F6A301325EB43C6C488A249E4DC31A&selectedIndex=11"
+        alt="frgt">
+
+
+
+    <!-- image  ends -->
+
+
+
+    <!-- student section -->
+    <div class="flex flex-col items-center justify-center w-full ">
+
+        <!-- heading starts -->
+        <div id="heading" class="flex  flex-col items-center justify-center m-3 ">
+
+            <h1 class="font-bold text-indigo-500 text-3xl mt-3">“Pure Hardwork, No Shortcuts!”</h1>
+            <div class="line w-48 m-3 h-2 bg-yellow-300" id="line"></div>
+        </div>
+        <!-- heading ends -->
+
+        <!-- cards group starts -->
+        <div class="flex  items-center justify-evenly  gap-3 w-full bg-white ">
+            <div id="cards" class="p-1 ">
+                <img class="w-24 " src="cars.jpg" alt="img">
+                <pc class="text-3xl text-white">Number</pc>
+                <p class="text-3xl text-gray-500">text</p>
+            </div>
+            <div id="cards" class="p-1 ">
+                <img class="w-24 " src="cars.jpg" alt="img">
+                <pc class="text-3xl text-white">Number</pc>
+                <p class="text-3xl text-gray-500">text</p>
+            </div>
+
+            <div id="cards" class="p-1 ">
+                <img class="w-24 " src="cars.jpg" alt="img">
+                <pc class="text-3xl text-white">Number</pc>
+                <p class="text-3xl text-gray-500">text</p>
+            </div>
+
+
+        </div>
+
+        <!-- cards group ends -->
+
+
+
     </div>
 
 
-    <button id="btn" class="m-24 bg-white text-black text-xl md:text-white">
-      Click me
-    </button>
-  </div>
-
-
-  <script>
-    let btn = document.getElementById("btn")
-    let p = document.getElementById("p")
-
-
-    btn.addEventListener("click" , ()=>{
-      console.log("hi")
-      // p.style.color  = "black"
-      p.classList.add("extra")
-
-    })
-    // let  = document.getElementById("")
-  </script>
 </body>
-
-
-
-
 
 </html>
